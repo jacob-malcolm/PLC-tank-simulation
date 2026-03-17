@@ -3,8 +3,6 @@
 ## Overview
 This project simulates an automated industrial tank filling system using PLC logic and real-time monitoring.
 
-![Demo](PLC%20demo%20media/tank%20sim%20gauge.gif)
-
 It demonstrates:  
 - PLC programming using CODESYS with **PID control** for smooth tank filling  
 - Industrial communication via OPC UA  
@@ -13,6 +11,7 @@ It demonstrates:
 - Interactive dashboard visualization with gauges and trend charts  
 
 ---
+![Demo](PLC%20demo%20media/tank%20sim%20gauge.gif)
 
 ## System Architecture
 
