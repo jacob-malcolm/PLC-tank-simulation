@@ -57,7 +57,9 @@ Streamlit Dashboard
 
 ```bash
 streamlit run dashboard/dashboard.py
+```
 
 ![Demo](PLC demo media/tank sim gauge.gif)
 ![Demo](PLC demo media/tank sim trend.gif)
 ![Demo](PLC demo media/tank sim SPC.gif)
+
