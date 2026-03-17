@@ -3,6 +3,8 @@
 ## Overview
 This project simulates an automated industrial tank filling system using PLC logic and real-time monitoring.
 
+![Demo](PLC%20demo%20media/tank%20sim%20gauge.gif)
+
 It demonstrates:  
 - PLC programming using CODESYS with **PID control** for smooth tank filling  
 - Industrial communication via OPC UA  
@@ -61,7 +63,6 @@ Streamlit Dashboard (Trend, SPC, and PID Valve Gauge)
 streamlit run dashboard/dashboard.py
 ```
 
-![Demo](PLC%20demo%20media/tank%20sim%20gauge.gif)
 ![Demo](PLC%20demo%20media/tank%20sim%20trend.gif)
 ![Demo](PLC%20demo%20media/tank%20sim%20SPC.gif)
 
