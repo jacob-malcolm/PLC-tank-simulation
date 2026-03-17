@@ -59,7 +59,7 @@ Streamlit Dashboard
 streamlit run dashboard/dashboard.py
 ```
 
-![Demo](PLC demo media/tank sim gauge.gif)
-![Demo](PLC demo media/tank sim trend.gif)
-![Demo](PLC demo media/tank sim SPC.gif)
+![Demo](PLC%20demo%20media/tank%20sim%20gauge.gif)
+![Demo](PLC%20demo%20media/tank%20sim%20trend.gif)
+![Demo](PLC%20demo%20media/tank%20sim%20SPC.gif)
 
