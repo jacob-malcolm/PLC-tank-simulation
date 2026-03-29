@@ -6,7 +6,8 @@ This project simulates an automated industrial tank filling system using PLC log
 It demonstrates:  
 - PLC programming using CODESYS with **PID control** for smooth tank filling  
 - Industrial communication via OPC UA  
-- Real-time data acquisition in Python  
+- Real-time data acquisition in Python
+- Historian-style logging via SQLite
 - Statistical Process Control (SPC)  
 - Interactive dashboard visualization with gauges and trend charts  
 
@@ -15,15 +16,24 @@ It demonstrates:
 
 ## System Architecture
 
-Tank Simulation (PLC – ST Code with PID)  
-        ↓  
-Control Logic (Structured Text)  
-        ↓  
-OPC UA Server  
-        ↓  
-Python Data Logger  
-        ↓  
-Streamlit Dashboard (Trend, SPC, and PID Valve Gauge)  
+PLC Simulation (CODESYS)
+        │
+        │  OPC UA
+        ▼
+Python OPC UA Client
+        │
+        ├── Real-Time Control Monitoring
+        ├── Data Logger (SQLite)
+        ▼
+SQLite Database (Historical Data)
+        │
+        ▼
+Streamlit Dashboard (HMI / Analytics Layer)
+        │
+        ├── Live Metrics
+        ├── SPC Charts
+        ├── Gauge Visualization
+        └── Operator Controls (Manual Mode / Reset)
 
 ---
 
@@ -32,7 +42,8 @@ Streamlit Dashboard (Trend, SPC, and PID Valve Gauge)
 - **PID-based tank level control** for continuous flow adjustment  
 - Valve actuation based on PID output  
 - Safety interlocks and alarm conditions  
-- Real-time OPC UA data acquisition  
+- Real-time OPC UA data acquisition
+- Data is continuously written to an SQLite database 
 - Live monitoring dashboard:  
   - Tank level trend  
   - SPC control chart (mean, UCL, LCL)  
@@ -45,7 +56,8 @@ Streamlit Dashboard (Trend, SPC, and PID Valve Gauge)
 
 - CODESYS (PLC Simulation)  
 - OPC UA  
-- Python  
+- Python
+- SQLite
 - Streamlit  
 - Plotly  
 - Pandas  
