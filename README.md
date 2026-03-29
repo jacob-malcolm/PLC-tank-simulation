@@ -11,7 +11,7 @@ It demonstrates:
 - Interactive dashboard visualization with gauges and trend charts  
 
 ---
-![Demo](PLC%20demo%20media/tank%20sim%20gauge.gif)
+![Demo](PLC%20demo%20media/PID%20demo.gif)
 
 ## System Architecture
 
@@ -61,7 +61,7 @@ Streamlit Dashboard (Trend, SPC, and PID Valve Gauge)
 ```bash
 streamlit run dashboard/dashboard.py
 ```
-
+![Demo](PLC%20demo%20media/tank%20sim%20gauge.gif)
 ![Demo](PLC%20demo%20media/tank%20sim%20trend.gif)
 ![Demo](PLC%20demo%20media/tank%20sim%20SPC.gif)
 
